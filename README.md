@@ -14,14 +14,15 @@ Summary: Colour Science for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/colour-science-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/colour-science-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/colour-science-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/colour-science-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/colour-science-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/colour-science-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/colour-science-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/colour-science-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/colour-science/badges/version.svg)](https://anaconda.org/conda-forge/colour-science)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/colour-science/badges/downloads.svg)](https://anaconda.org/conda-forge/colour-science)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-colour--science-green.svg)](https://anaconda.org/conda-forge/colour-science) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/colour-science.svg)](https://anaconda.org/conda-forge/colour-science) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/colour-science.svg)](https://anaconda.org/conda-forge/colour-science) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/colour-science.svg)](https://anaconda.org/conda-forge/colour-science) |
 
 Installing colour-science
 =========================
