@@ -1,7 +1,7 @@
 About colour-science
 ====================
 
-Home: http://colour-science.org/
+Home: https://www.colour-science.org/
 
 Package license: BSD 3-Clause
 
