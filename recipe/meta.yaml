@@ -38,8 +38,8 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: 'Colour Science for Python'
-  doc_url: http://colour.readthedocs.io/
-  dev_url: http://github.com/colour-science/colour
+  doc_url: https://colour.readthedocs.io/
+  dev_url: https://github.com/colour-science/colour
 
 extra:
   recipe-maintainers:
