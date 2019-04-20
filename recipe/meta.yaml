@@ -1,6 +1,6 @@
 {% set name = "colour-science" %}
-{% set version = "0.3.12" %}
-{% set sha256 = "38b8c553b620ffd3da1754e64196efc08c70e1ea6d3cc7257b326c2a4f9d3fac" %}
+{% set version = "0.3.13" %}
+{% set sha256 = "5f6b25a3bdd2d5fa7bca81a1b8b1a1418cff5d238622c86449dc6b52cd2819fa" %}
 
 package:
   name: {{ name|lower }}
