@@ -17,6 +17,7 @@ requirements:
   host:
     - python
     - pip
+    - poetry
   run:
     - matplotlib >=1.3.1
     - python
