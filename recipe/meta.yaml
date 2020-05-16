@@ -9,7 +9,7 @@ source:
   sha256: 5bc2c4b57cb219e9cd5c5b9432a3e9e50fdc0b434df9102b9ddf96d8d4d8ac14
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -24,7 +24,7 @@ requirements:
     - scipy >=0.16.0
     - six >=1.10.0
     # optinal/plotting
-    - matplotlib >=1.3.1
+    - matplotlib-base >=1.3.1
 
 test:
   imports:
