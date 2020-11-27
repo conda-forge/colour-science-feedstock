@@ -5,11 +5,13 @@ Home: https://www.colour-science.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/colour-science-feedstock/blob/master/LICENSE.txt)
 
 Summary: Colour Science for Python
 
+Development: https://github.com/colour-science/colour
 
+Documentation: https://colour.readthedocs.io/
 
 Current build status
 ====================
