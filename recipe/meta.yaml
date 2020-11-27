@@ -1,4 +1,4 @@
-{% set version = "0.3.15" %}
+{% set version = "0.3.16" %}
 
 package:
   name: colour-science
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/colour-science/colour-science-{{ version }}.tar.gz
-  sha256: 5bc2c4b57cb219e9cd5c5b9432a3e9e50fdc0b434df9102b9ddf96d8d4d8ac14
+  sha256: c39884ad5f0a9a498f285284e666eed203aa518d072cca0c20aca88a17bf237c
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Colour Science for Python'
+  summary: Colour Science for Python
   doc_url: https://colour.readthedocs.io/
   dev_url: https://github.com/colour-science/colour
 
