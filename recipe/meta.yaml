@@ -1,6 +1,5 @@
 {% set name = "colour-science" %}
-{% set version = "0.3.16" %}
-
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour-science-{{ version }}.tar.gz
-  sha256: c39884ad5f0a9a498f285284e666eed203aa518d072cca0c20aca88a17bf237c
+  sha256: 709f9d1228c46b34e961d2ae4b82c8a97b261ba8534f3301d54aa3fec75b54da
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,17 +20,18 @@ requirements:
     - pip
     - poetry
   run:
-    - python
-    - imageio
-    - scipy >=0.16.0
-    - six >=1.10.0
-    # optinal/plotting
-    - matplotlib-base >=1.3.1
+    - python >=3.8,<3.11
+    - imageio >=2,<3
+    - numpy >=1.19,<2
+    - scipy >=1.5,<2
+    - matplotlib-base >=3.2,!=3.5.0,!=3.5.1
 
 test:
   imports:
     - colour
-    - colour.adaptation
+    - colour.colorimetry
+    - colour.io
+    - colour.plotting
   commands:
     - pip check
   requires:
