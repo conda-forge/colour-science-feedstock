@@ -1,5 +1,5 @@
 {% set name = "colour-science" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour-science-{{ version }}.tar.gz
-  sha256: 709f9d1228c46b34e961d2ae4b82c8a97b261ba8534f3301d54aa3fec75b54da
+  sha256: 3aa7784683c708a7bed0980f06e2f0af4360d6475472a8296173b37c8102d839
 
 build:
   number: 0
