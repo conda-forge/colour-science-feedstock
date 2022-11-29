@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour-science-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour_science-{{ version }}.tar.gz
   sha256: 29a8d4c67104dafeebcd7c942f31e0935e356527a265aa81c4164ab34dd69b66
 
 build:
