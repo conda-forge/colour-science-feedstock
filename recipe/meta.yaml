@@ -10,7 +10,7 @@ source:
   sha256: 29a8d4c67104dafeebcd7c942f31e0935e356527a265aa81c4164ab34dd69b66
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - pip
     - poetry
   run:
-    - python >=3.9,<3.11
+    - python >=3.9,<3.12
     - imageio >=2,<3
     - numpy >=1.20,<2
     - scipy >=1.7,<2
