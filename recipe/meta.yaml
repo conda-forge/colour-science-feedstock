@@ -1,5 +1,5 @@
 {% set name = "colour-science" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour_science-{{ version }}.tar.gz
-  sha256: 29a8d4c67104dafeebcd7c942f31e0935e356527a265aa81c4164ab34dd69b66
+  sha256: d7e8b97a6dddb205bddff2175b0fe97286fdd2412594a0466bcf5943f2abfe07
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,10 +22,10 @@ requirements:
   run:
     - python >=3.9,<3.12
     - imageio >=2,<3
-    - numpy >=1.20,<2
-    - scipy >=1.7,<2
+    - numpy >=1.22,<2
+    - scipy >=1.8,<2
     - typing_extensions >=4,<5
-    - matplotlib-base >=3.4,!=3.5.0,!=3.5.1
+    - matplotlib-base >=3.5,!=3.5.0,!=3.5.1
 
 test:
   imports:
