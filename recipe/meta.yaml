@@ -1,5 +1,5 @@
 {% set name = "colour-science" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour_science-{{ version }}.tar.gz
-  sha256: d7e8b97a6dddb205bddff2175b0fe97286fdd2412594a0466bcf5943f2abfe07
+  sha256: a3cb3b8e8a51db82b62524173d65ae70396bfa943636e111e50fb7cc125857ad
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
     - poetry
   run:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.13
     - imageio >=2,<3
     - numpy >=1.22,<2
     - scipy >=1.8,<2
