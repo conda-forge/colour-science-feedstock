@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Colour Science for Python'
+  summary: Colour Science for Python
   doc_url: https://colour.readthedocs.io/
   dev_url: https://github.com/colour-science/colour
 
