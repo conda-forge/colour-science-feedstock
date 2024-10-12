@@ -25,7 +25,6 @@ requirements:
     - matplotlib-base >=3.7
     - numpy >=1.24,<3
     - scipy >=1.10,<2
-    - trimesh >=4,<5
     - typing_extensions >=4,<5
 
 test:
