@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "colour-science" %}
 {% set version = "0.4.6" %}
 
@@ -6,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/colour_science-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/colour_science-{{ version }}.tar.gz
   sha256: be98c2c9b2a5caf0c443431f402599ca9e1cc7d944bb804156803bcc97af4cf0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - hatch
   run:
-    - python >=3.10,<3.14
+    - python >={{ python_min }},<3.14
     - imageio >=2,<3
     - matplotlib-base >=3.7
     - numpy >=1.24,<3
@@ -37,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://www.colour-science.org/
