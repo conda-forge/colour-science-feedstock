@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  name: colour-science
+  version: "0.4.7"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/colour_science-${{ version }}.tar.gz
+  sha256: b34773dc4dd3f9ba99cca5297fa10e9f532134d994b3a2308dacbe970dfd5079
+
+build:
+  number: 2
+  noarch: python
+  script:
+    # upstream accidentally ships a coverage report inside the package
+    - rm -rf colour/htmlcov
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - hatchling
+  run:
+    - python >=${{ python_min }}
+    - numpy >=2.0.0,<3
+    # optional upstream, but kept as hard deps for a complete install
+    - imageio >=2,<3
+    - matplotlib-base >=3.9
+    - scipy >=1.13.0,<2
+
+tests:
+  - python:
+      imports:
+        - colour
+        - colour.colorimetry
+        - colour.io
+        - colour.plotting
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Colour Science for Python
+  homepage: https://www.colour-science.org/
+  repository: https://github.com/colour-science/colour
+  documentation: https://colour.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - thomasmansencal
+    - MichaelMauderer
+    - carlodri
